@@ -2,7 +2,7 @@
 
 $host = "sql313.infinityfree.com";
 $username = "if0_42773278";
-$password = "YOUR_DATABASE_PASSWORD";
+$password = "AnushkaDesh123";
 $database = "if0_42773278_college_demo";
 
 mysqli_report(MYSQLI_REPORT_OFF);
