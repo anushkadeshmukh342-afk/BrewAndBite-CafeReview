@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #f6f0e7;
+    color: #2d211b;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(246, 240, 231, 0.96);
+    border-bottom: 1px solid #ded2c3;
+}
+
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+nav a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+nav a:hover {
+    opacity: 0.55;
+}
+
+
+.nav-button {
+    background: #2d211b;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+}
+
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 650px;
+    padding: 90px 30px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+
+.small-title,
+.section-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #9a684b;
+}
+
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(50px, 7vw, 90px);
+    line-height: 0.98;
+    margin: 25px 0;
+}
+
+
+.hero h1 span {
+    font-style: italic;
+    color: #a66b49;
+}
+
+
+.hero-text {
+    max-width: 560px;
+    font-size: 18px;
+    color: #6c5b4d;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin: 35px 0 20px;
+    flex-wrap: wrap;
+}
+
+
+.primary-button,
+.submit-button {
+    display: inline-block;
+    border: none;
+    background: #2d211b;
+    color: white;
+    padding: 15px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.secondary-button {
+    padding: 15px 24px;
+    border-bottom: 2px solid #2d211b;
+    font-weight: 700;
+}
+
+
+.open-status {
+    color: #55734d;
+    font-size: 13px;
+}
+
+
+.coffee-art {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.coffee-circle {
+    width: 360px;
+    height: 360px;
+    background: #dbc4a7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cup {
+    width: 190px;
+    height: 125px;
+    background: #fffaf2;
+    border-radius: 10px 10px 70px 70px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(45, 33, 27, 0.2);
+}
+
+
+.cup::after {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 25px;
+    width: 65px;
+    height: 65px;
+    border: 15px solid #fffaf2;
+    border-left: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+
+.coffee {
+    width: 160px;
+    height: 30px;
+    background: #553525;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+
+
+.coffee-label {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background: #2d211b;
+    color: white;
+    padding: 18px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transform: rotate(5deg);
+}
+
+
+.ticker {
+    background: #2d211b;
+    color: #fff;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+.story {
+    max-width: 1200px;
+    margin: auto;
+    padding: 130px 30px;
+}
+
+
+.story-box {
+    max-width: 750px;
+}
+
+
+.story-number {
+    color: #a66b49;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+.story h2,
+.menu-heading h2,
+.review-heading h2,
+.review-info h2,
+.database-reviews h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(45px, 6vw, 70px);
+    line-height: 1.05;
+}
+
+
+.story p {
+    margin-top: 30px;
+    max-width: 650px;
+    font-size: 18px;
+    color: #6c5b4d;
+}
+
+
+blockquote {
+    margin-top: 30px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+.menu-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+
+.menu-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin: 20px 0 50px;
+}
+
+
+.menu-heading p {
+    color: #765f50;
+}
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+
+.menu-card {
+    padding: 30px;
+    border: 1px solid #d9cbbb;
+    background: #fbf7f0;
+    transition: 0.25s;
+}
+
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(45, 33, 27, 0.1);
+}
+
+
+.menu-card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.menu-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+}
+
+
+.price {
+    font-weight: 700;
+    color: #a66b49;
+}
+
+
+.menu-card p {
+    margin: 15px 0;
+    color: #735f51;
+}
+
+
+.menu-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #927158;
+}
+
+
+.reviews-preview {
+    background: #e6d4bf;
+    padding: 110px 30px;
+}
+
+
+.review-heading,
+.review-cards {
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+.review-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+
+.rating-big {
+    text-align: right;
+}
+
+
+.rating-big strong {
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+}
+
+
+.rating-big div {
+    color: #a66b49;
+    font-size: 20px;
+}
+
+
+.rating-big small {
+    color: #6e5949;
+}
+
+
+.review-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.review-card {
+    background: #f8f1e7;
+    padding: 30px;
+}
+
+
+.review-card span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #a66b49;
+}
+
+
+.review-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    margin: 25px 0 15px;
+}
+
+
+.review-card p {
+    color: #6c5b4d;
+    margin-bottom: 25px;
+}
+
+
+.view-reviews {
+    display: block;
+    max-width: 1140px;
+    margin: 40px auto 0;
+    font-weight: 700;
+}
+
+
+.review-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 30px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 100px;
+}
+
+
+.review-info p:not(.section-label) {
+    color: #6c5b4d;
+    margin: 30px 0;
+}
+
+
+.review-form {
+    background: #fffaf3;
+    padding: 45px;
+    border: 1px solid #dfd0bf;
+}
+
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d4c4b3;
+    background: #fff;
+    font-family: inherit;
+    outline: none;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #8d6047;
+}
+
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+
+.stars input {
+    display: none;
+}
+
+
+.stars label {
+    font-size: 35px;
+    color: #c8b9aa;
+    cursor: pointer;
+}
+
+
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input:checked ~ label {
+    color: #b9784e;
+}
+
+
+.submit-button {
+    width: 100%;
+}
+
+
+.form-note {
+    font-size: 12px;
+    color: #8a7665;
+    margin-top: 12px;
+    text-align: center;
+}
+
+
+footer {
+    background: #2d211b;
+    color: #fff;
+    text-align: center;
+    padding: 60px 30px;
+}
+
+
+.footer-logo {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+}
+
+
+footer p {
+    color: #cbbcaf;
+    margin: 10px 0 25px;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+.footer-links a:hover {
+    color: #d7a17c;
+}
+
+
+.copyright {
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+
+/* DATABASE REVIEWS */
+
+.database-reviews {
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+
+.database-reviews h1 {
+    margin: 20px 0 50px;
+}
+
+
+.database-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.database-card {
+    background: #fffaf3;
+    border: 1px solid #dfd0bf;
+    padding: 30px;
+}
+
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    color: #977964;
+    font-size: 11px;
+    gap: 15px;
+}
+
+
+.database-card h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    margin: 25px 0 5px;
+}
+
+
+.item-name {
+    color: #a66b49;
+    font-weight: 700;
+}
+
+
+.roll-number {
+    font-size: 12px;
+    color: #8c7968;
+    margin-top: 10px;
+}
+
+
+.database-feedback {
+    background: #f3e9dc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.success-message {
+    background: #dcebd8;
+    border: 1px solid #a9c99e;
+    padding: 18px;
+    margin-bottom: 30px;
+    color: #365b2d;
+}
+
+
+.empty-state {
+    background: #fffaf3;
+    padding: 50px;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+
+.empty-state p {
+    margin: 15px 0 25px;
+    color: #765f50;
+}
+
+
+.back-button {
+    display: inline-block;
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 18px 20px;
+    }
+
+
+    nav a:not(.nav-button) {
+        display: none;
+    }
+
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+    }
+
+
+    .coffee-art {
+        min-height: 350px;
+    }
+
+
+    .coffee-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    .story,
+    .menu-section,
+    .review-section,
+    .database-reviews {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .menu-grid,
+    .review-cards,
+    .database-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .menu-heading,
+    .review-heading {
+        display: block;
+    }
+
+
+    .rating-big {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+
+    .review-section {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    .review-form {
+        padding: 25px;
+    }
+
+}
